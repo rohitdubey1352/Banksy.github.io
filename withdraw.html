@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw</title>
+
+    <link rel="stylesheet" href="/assets/css/login.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" id="wizard">
+            <section>
+                <div class="inner">
+                    
+                    <div class="image-holder">
+                        <img src="/assets/img/form-wizard-1.jpg" alt="imgf">
+                    </div>
+
+                    <div class="form-content">
+                        <div class="form-header">
+                            <h3>Withdraw</h3>
+                            <h2>Withdraw</h2>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-holder">
+                                <label for="amount">Amount</label>
+                                <input type="number" name="amount" id="withdrw_amnt" placeholder="Enter the Amount" class="form-control">
+                            </div>
+                            <div class="form-holder">
+                                <label for="password">Password</label>
+                                <input type="password" name="pass" placeholder="Enter your Password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <ul>
+                                <li>
+                                    <button onclick="withdraw()">Submit</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </div>
+
+<script>
+    function withdraw(){
+        const amount = document.getElementById('withdrw_amnt').value;
+        const rs = parseFloat(amount);
+        alert("successfully Withdraw amount is:- "+rs);
+    }
+
+</script>
+
+</body>
+</html>
